@@ -14,6 +14,7 @@ function sortArrayForTree(array) {
 }
 
 function prettyPrint(node, prefix = "", isLeft = true) {
+  // from The Odin Project
   if (node === null) {
     return;
   }
@@ -44,7 +45,7 @@ function Tree(array) {
     return node;
   }
 
-  let root = buildTree(array);
+  const root = buildTree(array);
 
   return { buildTree };
 }
